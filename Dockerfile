@@ -16,5 +16,4 @@ RUN chown transcriber:transcriber /home/transcriber/transcrbr.py
 USER transcriber
 WORKDIR /home/transcriber
 
-
-CMD /home/transcriber/transcrbr.py
+CMD ["/usr/bin/python3", "/home/transcriber/transcrbr.py"]
